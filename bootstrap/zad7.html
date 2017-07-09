@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Moja pierwsza strona z użyciem Bootstrapa</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".topmenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">wrzalka.com</a>
+                </div>
+                <div class="collapse navbar-collapse topmenu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home <span class="badge">1</span></a></li>
+                        <li><a href="#">O mnie</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Kategorie <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Programowanie</a></li>
+                                <li><a href="#">Jedzenie</a></li>
+                                <li><a href="#">Opinie</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Przydatne linki</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="szukaj...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+            Na stronie pojawił się nowy wpis.
+            <a href="#" class="alert-link">Przeczytaj!</a>
+        </div>
+        <ol class="breadcrumb">
+            <li><a href="#">wrzalka.com</a></li>
+            <li><a href="#">wpisy</a></li>
+            <li class="active">o mnie</li>
+        </ol>
+        <div class="page-header">
+            <h1>Wstęp do Bootstrapa <span class="hidden-xs label label-success">programowanie</span></h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis magna eget mattis molestie. In hac habitasse platea dictumst. Duis nisl arcu, posuere a feugiat vel, ultrices id sem. Proin in sodales neque. Duis ut nisl sit amet nulla placerat elementum. Phasellus sed sollicitudin lorem, sed elementum urna. Aenean aliquet sollicitudin mi, ut viverra quam dapibus sed. Aenean bibendum, felis sed fringilla volutpat, purus orci mattis leo, et fringilla tellus velit eget lacus. Aliquam erat volutpat. Ut blandit justo nec maximus viverra. Vivamus et enim efficitur, gravida felis sit amet, efficitur nulla. Pellentesque faucibus, leo vitae gravida sagittis, nibh turpis fermentum odio, ut aliquet lectus risus nec ex. Nunc congue iaculis porta. Phasellus malesuada, enim eget ultricies mollis, ante dolor laoreet mauris, sed ornare tortor est vel sem. Fusce ac lobortis est.</p>
+
+        <h2>Kolejny akapit o niczym</h2>
+
+        <p>Ut suscipit sed risus at gravida. Duis enim purus, malesuada a justo tincidunt, semper semper felis. Etiam ultricies consectetur elit. Nunc rutrum sodales bibendum. Maecenas elementum suscipit est sit amet porttitor. Integer tortor sapien, interdum eget condimentum et, ultrices vel nisl. Curabitur consequat lectus et eros feugiat, eu sollicitudin ipsum bibendum. Cras suscipit posuere ex, in fringilla nisi placerat aliquam. Morbi tincidunt feugiat est, sed dictum nibh. Maecenas et dui sed leo sagittis hendrerit. Morbi diam mi, efficitur at ipsum sed, venenatis molestie urna. Praesent sollicitudin elementum augue eget pretium. Pellentesque pharetra dignissim metus quis eleifend. Nulla sollicitudin volutpat tortor eget vestibulum. Phasellus sed scelerisque leo, a accumsan est.</p>
+        <h3>Galeria</h3>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="images/1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="images/2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="images/3.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="images/4.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+        <nav>
+            <ul class="pager">
+                <li class="previous"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span> Poprzedni wpis</a></li>
+                <li class="next"><a href="#">Następny wpis <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
