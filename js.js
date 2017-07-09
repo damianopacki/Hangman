@@ -1,4 +1,3 @@
-
 var haslo = 'test';
 haslo = haslo.toUpperCase();
 
@@ -101,3 +100,26 @@ function sprawdz(nr) {
         }
     }
 }
+
+$('.js-info').on('click', function() {
+  if ($(this).hasClass('klik')) {
+    $(this).removeClass('klik');
+  }
+  else {
+    $(this).addClass('klik');
+    alert('Gra stworzona na podstawie kursu Mirosława Zelenta');
+    $(this).removeClass('klik');
+  }
+})
+
+$('.but').on('click', function() {
+  if ($(this).hasClass('show')) {
+    $(this).removeClass('show');
+    $('.category > a').css('display', 'none');
+  }
+  else {
+    $(this).addClass('show');
+    $('.category > a').css('display', 'block');
+
+  }
+});

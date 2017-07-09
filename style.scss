@@ -1,53 +1,113 @@
+$deepGrey: #222930;
+$black: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 body {
-    -webkit-touch-callout: none; 
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    
-    background-color: #000;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background-color: $black;
     color: lightgray;
     font-size: 30px;
-    font-family: 'Inconsolata';
+    font-family: 'Sans-serif';
     font-weight: 700;
-    margin: 0;
 }
 
 header {
-    display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    text-align: center;
-    background-color: #222930;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    
-    .icons {
-        padding: 10px 20px;
-        
-        &:hover {
-            color: white;
-        }
-        
-    }
-    
-    .logo {
-        width: 980px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 48px;
+  display: flex;
+  justify-content: space-around;
+  max-height: 50px;
+  width: 100%;
+  background-color: $deepGrey;
+  padding: 10px 0;
+  text-transform: uppercase;
+
+    .dropdown {
+      margin-left: 10px;
+
+      .but {
+        background-color: #666;
+        color: #fff;
+        padding: 8px;
+        min-height: 40px;
+        border: 2px solid black;
+        border-radius: 4px;
         text-transform: uppercase;
-        letter-spacing: 3px;
-        padding-left: 50px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #fff;
+          color: #666;
+        }
+      }
+
+      .category > a {
+        text-decoration: none;
+        text-align: center;
+
+        color: #fff;
+        text-transform: none;
+        font-size: 24px;
+        margin-top: 5px;
+        padding: 5px;
+        border: 2px solid $deepGrey;
+        background-color: #666;
+        border-radius: 4px;
+        display: none;
+
+        &:hover {
+          background-color: #fff;
+          color: #666;
+        }
+      }
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 48px;
+      color: #fff;
+      letter-spacing: 3px;
+    }
+
+    .fa {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 42px;
+      margin-right: 10px;
+
+        &:hover {
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    li {
+      display: none;
     }
 }
 
 #pojemnik {
+    flex: 1;
     width: 1000px;
     margin: 0 auto;
-    
+
     #plansza {
         width: 1000px;
         margin-top: 50px;
@@ -56,7 +116,7 @@ header {
         font-size: 48px;
         min-height: 60px;
     }
-    
+
     #szubienica {
         float: left;
         width: 450px;
@@ -64,14 +124,20 @@ header {
         min-height: 280px;
         margin: 0 50px;
     }
-    
+
     #alfabet {
         float: left;
         width: 450px;
         text-align: center;
         min-height: 280px;
+
+        &:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
     }
-    
+
     .litera {
         width: 30px;
         height: 30px;
@@ -82,22 +148,34 @@ header {
         float: left;
         cursor: pointer;
         border-radius: 15px;
-        
+
         &:hover {
             background-color: #222;
-            color: white;
-            border: 3px solid white;
+            color: #fff;
+            border: 3px solid #fff;
         }
     }
-    
+
     .reset {
         color: green;
         cursor: pointer;
         font-size: 48px;
-        
+
         &:hover {
-            color: white;
+            color: #fff;
         }
     }
-    
+}
+
+footer {
+  width: 100%;
+  min-height: 40px;
+  position: absolute;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 2px;
+  background-color: $deepGrey;
+  text-transform: uppercase;
+  font-size: 14px;
+  bottom: 0;
 }
