@@ -1,0 +1,79 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #000;
+  color: lightgray;
+  font-size: 30px;
+  font-family: 'Inconsolata';
+  font-weight: 700;
+  margin: 0; }
+
+header {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  background-color: #222930;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase; }
+  header .icons {
+    padding: 10px 20px; }
+    header .icons:hover {
+      color: white; }
+  header .logo {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-left: 50px; }
+
+#pojemnik {
+  width: 1000px;
+  margin: 0 auto; }
+  #pojemnik #plansza {
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 48px;
+    min-height: 60px; }
+  #pojemnik #szubienica {
+    float: left;
+    width: 450px;
+    text-align: center;
+    min-height: 280px;
+    margin: 0 50px; }
+  #pojemnik #alfabet {
+    float: left;
+    width: 450px;
+    text-align: center;
+    min-height: 280px; }
+  #pojemnik .litera {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid gray;
+    float: left;
+    cursor: pointer;
+    border-radius: 15px; }
+    #pojemnik .litera:hover {
+      background-color: #222;
+      color: white;
+      border: 3px solid white; }
+  #pojemnik .reset {
+    color: green;
+    cursor: pointer;
+    font-size: 48px; }
+    #pojemnik .reset:hover {
+      color: white; }
+
+/*# sourceMappingURL=style.css.map */
