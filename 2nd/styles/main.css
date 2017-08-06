@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body {
+  margin: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: lightgray;
+  font-size: 30px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 50px;
+  width: 100%;
+  background-color: #222930;
+  padding: 10px 0;
+  text-transform: uppercase; }
+  header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #fff;
+    letter-spacing: 3px; }
+    header .logo .title {
+      color: red; }
+
+.container {
+  flex: 1;
+  width: 1000px;
+  margin: 0 auto; }
+  .container .board {
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 48px;
+    min-height: 60px; }
+  .container .gallows {
+    float: left;
+    width: 450px;
+    text-align: center;
+    min-height: 280px;
+    margin: 0 50px; }
+  .container .alphabet {
+    float: left;
+    width: 450px;
+    text-align: center;
+    min-height: 280px; }
+    .container .alphabet:after {
+      content: '';
+      display: block;
+      clear: both; }
+  .container .litera {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid gray;
+    float: left;
+    cursor: pointer;
+    border-radius: 15px; }
+    .container .litera:hover {
+      background-color: #222;
+      color: #fff;
+      border: 3px solid #fff; }
+  .container .win {
+    color: #14b629; }
+  .container .lose {
+    color: #de1b1b; }
+  .container .reset {
+    color: #14b629;
+    cursor: pointer;
+    font-size: 48px;
+    text-decoration: none; }
+    .container .reset:hover {
+      color: #fff; }
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; }
+  .options a {
+    font-size: 22px;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #779bdf; }
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 2px;
+  background-color: #222930;
+  text-transform: uppercase;
+  font-size: 14px;
+  left: 0;
+  bottom: 0; }
+
+/*# sourceMappingURL=main.css.map */
