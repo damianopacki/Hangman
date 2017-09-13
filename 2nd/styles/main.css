@@ -63,7 +63,7 @@ header {
       content: '';
       display: block;
       clear: both; }
-  .container .litera {
+  .container .letter {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -73,7 +73,7 @@ header {
     float: left;
     cursor: pointer;
     border-radius: 15px; }
-    .container .litera:hover {
+    .container .letter:hover {
       background-color: #222;
       color: #fff;
       border: 3px solid #fff; }

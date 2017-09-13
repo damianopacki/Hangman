@@ -34,37 +34,37 @@ function createPassword() {
 window.onload = start;
 
 function start() {
-    var trescDiva = "";
+    var content = "";
     for (var i = 0; i <= 34; i++) {
         var element = "lit" + i;
-        trescDiva += '<div class="litera" onclick="check('+ i +')" id="'+ element +'">' + letters[i] + '</div>';
+        content += '<div class="letter" onclick="check('+ i +')" id="'+ element +'">' + letters[i] + '</div>';
         if ((i + 1) % 7 === 0) {
-            trescDiva += '<div style="clear:both;"</div>';
+            content += '<div style="clear:both;"</div>';
         }
     }
-    gameElements.alphabet.html(trescDiva);
+    gameElements.alphabet.html(content);
     createPassword();
 }
 
-String.prototype.set = function(miejsce, znak) {
-    if (miejsce > this.length - 1) {
+String.prototype.set = function(index, value) {
+    if (index > this.length - 1) {
         return this.toString();
     }
     else {
-        return this.substr(0, miejsce) + znak + this.substr(miejsce + 1);
+        return this.substr(0, index) + value + this.substr(index + 1);
     }
 }
 
 function check(nr) {
-    var trafiona = false;
+    var hit = false;
     for(i = 0; i < length; i++){
         if (password.charAt(i) === letters[nr]) {
             password1 = password1.set(i, letters[nr]);
-            trafiona = true;
+            hit = true;
         }
     }
 
-    if (trafiona === true) {
+    if (hit === true) {
         gameSounds.yes.play();
         var element = "lit" + nr;
         document.getElementById(element).style.background = '#003300';
